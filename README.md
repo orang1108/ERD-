@@ -1,6 +1,7 @@
 # ERD-
-%% ERD Mermaid untuk proyek Aura_Ukk
+```mermaid
 erDiagram
+
     USERS {
         bigint id PK
         string username
@@ -53,4 +54,6 @@ erDiagram
     USERS ||--o{ ADMINS : "has (nullable)"
     USERS ||--o{ ASPIRASIS : "creates"
     KATEGORIS ||--o{ ASPIRASIS : "categorizes"
-    SISWAS ||--o{ ASPIRASIS : "files (via nis, no DB FK)"
+    SISWAS ||--o{ ASPIRASIS : "files (via nis)"
+```
+
